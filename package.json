@@ -1,0 +1,25 @@
+{
+  "name": "phonenumbervalidator",
+  "version": "1.0.0",
+  "description": "Npm to check the phone number's validity",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sujathaselvaraj/phoneNumberValidator.git"
+  },
+  "keywords": [
+    "phonenumbervalidator"
+  ],
+  "author": "Sujatha Selvaraj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sujathaselvaraj/phoneNumberValidator/issues"
+  },
+  "homepage": "https://github.com/sujathaselvaraj/phoneNumberValidator#readme",
+  "dependencies": {
+    "google-libphonenumber": "^3.2.40"
+  }
+}
