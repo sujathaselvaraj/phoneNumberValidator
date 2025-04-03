@@ -1,5 +1,5 @@
 {
-  "name": "phonenumbervalidator",
+  "name": "phonenum-info",
   "version": "1.0.0",
   "description": "Npm to check the phone number's validity",
   "main": "index.js",
