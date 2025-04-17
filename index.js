@@ -1,9 +1,22 @@
-function phonenumbervalidator(num,code) {
-    // Require `PhoneNumberFormat`.
-    const PNF = require('google-libphonenumber').PhoneNumberFormat;
+  // Require `PhoneNumberFormat`.
+  const PNF = require('google-libphonenumber').PhoneNumberFormat;
     
-    // Get an instance of `PhoneNumberUtil`.
-    const phoneUtil = require('google-libphonenumber').PhoneNumberUtil.getInstance();
+  // Get an instance of `PhoneNumberUtil`.
+  const phoneUtil = require('google-libphonenumber').PhoneNumberUtil.getInstance();
+  
+  function isValidPhonenumber(num,code){
+    const number = phoneUtil.parse(num, code);
+    if(phoneUtil.isValidNumber(number)){
+      console.log(`${num} is Valid phone number`);
+      return true;
+    }else{
+       console.log(`${num} is InValid phone number`);
+       return false;
+    }
+  }
+  
+  function phonenumbervalidator(num,code) {
+  
     phoneNumberType={
       0:"FIXED LINE",
       1:"MOBILE",
@@ -19,11 +32,6 @@ function phonenumbervalidator(num,code) {
       11:"UNKNOWN"
     }
     const number = phoneUtil.parse(num, code);
-    // if(phoneUtil.isValidNumber(number)){
-    //   return (`${num} is Valid phone number`)
-    // }else{
-    //     return (`${num} is InValid phone number`)
-    // }
     console.log("Welcome to Phone Number Validator \n");
     if(phoneUtil.isValidNumber(number) && phoneUtil.isValidNumberForRegion(number, code)){
       return (`${num} is Valid phone ${phoneNumberType[phoneUtil.getNumberType(number)]} number for region - ${code}\n
@@ -43,4 +51,7 @@ function phonenumbervalidator(num,code) {
 
   }
   
-  module.exports = phonenumbervalidator
+  module.exports = {
+    isValidPhonenumber,
+    phonenumbervalidator
+  };
