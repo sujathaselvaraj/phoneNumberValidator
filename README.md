@@ -66,7 +66,7 @@ Various Formats:
 E164 Format           : +9647XXXXX0519
 Original Format       : 7XXXXX0519
 National Format       : 07XXXXX0519
-International Format  : +964 740 207 0519
+International Format  : +964 7XX XXX 0519
 
 3. Find Possible Matches for a Phone Number 🔍
 To find possible phone number matches across multiple regions, use the possibilityOfPhoneNumber function.
@@ -85,37 +85,37 @@ This will return an array of possible matches across different regions.
   {
     "Country": "Germany",
     "Number Type": "FIXED LINE",
-    "International Format": "+49 7402 070519"
+    "International Format": "+49 7XXX XX0519"
   },
   {
     "Country": "India",
     "Number Type": "MOBILE",
-    "International Format": "+91 74020 70519"
+    "International Format": "+91 7XXXX X0519"
   },
   {
     "Country": "Iran",
     "Number Type": "FIXED LINE",
-    "International Format": "+98 74 0207 0519"
+    "International Format": "+98 7X XXXX 0519"
   },
   {
     "Country": "Iraq",
     "Number Type": "MOBILE",
-    "International Format": "+964 740 207 0519"
+    "International Format": "+964 7XX XXX 0519"
   },
   {
     "Country": "Luxembourg",
     "Number Type": "FIXED LINE",
-    "International Format": "+352 74 02 07 0519"
+    "International Format": "+352 7X XX XX 0519"
   },
   {
     "Country": "United Kingdom",
     "Number Type": "MOBILE",
-    "International Format": "+44 7402 070519"
+    "International Format": "+44 7XXX XX0519"
   },
   {
     "Country": "United States",
     "Number Type": "FIXED LINE OR MOBILE",
-    "International Format": "+1 740-207-0519"
+    "International Format": "+1 7XX-XXX-0519"
   }
 ]
 
@@ -131,13 +131,13 @@ console.log(result);
 This will return a simplified array:
 
 [
-  "Germany: Fixed Line - +49 7402 070519",
-  "India: Mobile - +91 74020 70519",
-  "Iran: Fixed Line - +98 74 0207 0519",
-  "Iraq: Mobile - +964 740 207 0519",
-  "Luxembourg: Fixed Line - +352 74 02 07 0519",
-  "United Kingdom: Mobile - +44 7402 070519",
-  "United States: Fixed Line or Mobile - +1 740-207-0519"
+  "Germany: Fixed Line - +49 7XXX XX0519",
+  "India: Mobile - +91 7XXXX X0519",
+  "Iran: Fixed Line - +98 7X XXXX 0519",
+  "Iraq: Mobile - +964 7XX XXX 0519",
+  "Luxembourg: Fixed Line - +352 7X XX XX 0519",
+  "United Kingdom: Mobile - +44 7XXX XX0519",
+  "United States: Fixed Line or Mobile - +1 7XX-XXX-0519"
 ]
 
 4. Find Country Name from Region Code 🌍
@@ -199,7 +199,7 @@ Various Formats:
 E164 Format           : +9647XXXXX0519
 Original Format       : 7XXXXX0519
 National Format       : 07XXXXX0519
-International Format  : +964 740 207 0519
+International Format  : +964 7XX XXX 0519
 
 # License 📜
 This library is open-source and released under the MIT License.
