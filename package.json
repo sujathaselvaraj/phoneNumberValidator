@@ -1,6 +1,6 @@
 {
   "name": "phonenum-info",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Npm to check the phone number's validity",
   "main": "index.js",
   "scripts": {
