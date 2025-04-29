@@ -251,8 +251,6 @@ function phonenumbervalidator(num, code) {
   try {
     const number = phoneUtil.parse(String(num), code); // Safe string conversion
 
-    console.log("Welcome to Phone Number Validator\n");
-
     if (
       phoneUtil.isValidNumber(number) &&
       phoneUtil.isValidNumberForRegion(number, code)
